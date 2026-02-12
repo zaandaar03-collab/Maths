@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Math Challenge</title>
+<meta charset="UTF-8">
+<title>Math Challenge</title>
 
-    <style>
-        body{
-            font-family: Arial;
-            text-align:center;
-            margin-top:100px;
-            background:#f4f6f9;
-        }
-        input{
-            padding:10px;
-            font-size:16px;
-        }
-        button{
-            padding:10px 20px;
-            font-size:16px;
-            cursor:pointer;
-        }
-    </style>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    margin-top:100px;
+    background:#f4f6f9;
+    padding:20px;
+}
+input{
+    padding:10px;
+    font-size:16px;
+}
+button{
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+.question{
+    max-width:600px;
+    margin:auto;
+}
+</style>
 
 </head>
+
 <body>
 
-<h2>Solve this math question to continue 👇</h2>
-<p><b>Three bells toll at intervals of 9, 12, 15 minutes respectively. If they start tolling together, after what time
-will they next toll together?(answer in minutes)</b></p>
+<h2>Solve this to continue 😈</h2>
 
-<input type="number" id="answer" placeholder="Enter answer">
+<div class="question">
+<p>
+Three bells toll at intervals of 9, 12, 15 minutes respectively. 
+If they start tolling together, after what time will they next toll together?
+</p>
+</div>
+
+<input type="number" id="answer" placeholder="Enter answer in minutes">
 <br><br>
 <button onclick="checkAnswer()">Submit</button>
 
@@ -36,12 +48,11 @@ will they next toll together?(answer in minutes)</b></p>
 
 <script>
 function checkAnswer(){
-    let ans = document.getElementById("180").value;
+    let ans = document.getElementById("answer").value;
 
     if(ans == "180"){
         window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    }
-    else{
+    }else{
         document.getElementById("result").innerHTML="❌ Wrong answer… try again 😈";
     }
 }
