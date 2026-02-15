@@ -1,112 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formula 1 World</title>
-
+<title>F1 World - Home</title>
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-}
-
-body{
-    background:#111;
-    color:white;
-}
-
-nav{
+body{margin:0;font-family:Arial;background:#111;color:white;text-align:center;}
+nav{background:#e10600;padding:15px;}
+nav a{color:white;margin:15px;text-decoration:none;font-weight:bold;}
+nav a:hover{text-decoration:underline;}
+section{padding:80px 20px;}
+h1{color:#e10600;font-size:50px;}
+.button{
+    display:inline-block;
+    padding:15px 30px;
     background:#e10600;
-    padding:15px;
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-}
-
-nav a{
     color:white;
     text-decoration:none;
-    font-weight:bold;
-}
-
-nav a:hover{
-    text-decoration:underline;
-}
-
-section{
-    padding:120px 20px;
-    text-align:center;
-}
-
-#home{
-    background:url('https://images.unsplash.com/photo-1603297631955-3e6d2e7f6c2c') center/cover no-repeat;
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
-
-#home h1{
-    font-size:60px;
-    color:#e10600;
-}
-
-.card-container{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-    margin-top:40px;
-}
-
-.card{
-    background:#222;
-    padding:25px;
-    width:280px;
-    border-radius:12px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:scale(1.05);
-}
-
-.card img{
-    width:120px;
-    margin-bottom:15px;
-}
-
-.card h3{
-    color:#e10600;
-}
-
-#about p{
-    max-width:900px;
-    margin:20px auto;
-    line-height:1.8;
-    font-size:18px;
-}
-
-#about h2{
-    font-size:40px;
-    color:#e10600;
-}
-
-footer{
-    background:#e10600;
-    padding:20px;
-    text-align:center;
+    margin-top:20px;
+    border-radius:5px;
 }
 </style>
 </head>
@@ -114,98 +24,18 @@ footer{
 <body>
 
 <nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About F1</a></li>
-<li><a href="#teams">Teams</a></li>
-<li><a href="#drivers">Drivers</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="teams.html">Teams</a>
+<a href="drivers.html">Top Drivers</a>
+<a href="contact.html">Contact</a>
 </nav>
 
-<section id="home">
+<section>
 <h1>FORMULA 1</h1>
 <p>The Pinnacle of Motorsport</p>
+<a href="drivers.html" class="button">Explore Top Drivers</a>
 </section>
-
-<section id="about">
-<h2>About Formula 1</h2>
-<p>
-Formula 1 (F1) is the highest level of international single-seater automobile racing, governed by the FIA.
-It represents the pinnacle of motorsport technology, combining elite driver skill with cutting-edge engineering.
-Each season consists of a series of races called Grands Prix, held worldwide on purpose-built circuits and street tracks.
-</p>
-
-<p>
-Modern F1 cars are powered by hybrid power units combining turbocharged V6 engines with advanced energy recovery systems.
-They can reach speeds over 350 km/h and generate immense aerodynamic downforce, allowing them to corner at extraordinary speeds.
-</p>
-
-<p>
-Formula 1 is not just about speed — it is a global spectacle involving strategy, tire management,
-pit stops, team coordination, and constant technological innovation.
-With millions of fans worldwide, F1 continues to push the boundaries of performance and competition.
-</p>
-</section>
-
-<section id="teams">
-<h2 style="font-size:40px; color:#e10600;">Top Teams</h2>
-
-<div class="card-container">
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Red_Bull_Racing_logo.svg">
-<h3>Red Bull Racing</h3>
-<p>Known for aerodynamic excellence and recent championship dominance.</p>
-</div>
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Mercedes_AMG_Petronas_F1_Logo.svg">
-<h3>Mercedes</h3>
-<p>Eight-time constructors’ champions with revolutionary hybrid dominance.</p>
-</div>
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Scuderia_Ferrari_Logo.svg">
-<h3>Ferrari</h3>
-<p>The most historic and iconic team in Formula 1 history.</p>
-</div>
-
-</div>
-</section>
-
-<section id="drivers">
-<h2 style="font-size:40px; color:#e10600;">Top Drivers</h2>
-
-<div class="card-container">
-
-<div class="card">
-<h3>Max Verstappen</h3>
-<p>Multiple-time World Champion with aggressive precision driving.</p>
-</div>
-
-<div class="card">
-<h3>Lewis Hamilton</h3>
-<p>Seven-time World Champion and one of the greatest drivers ever.</p>
-</div>
-
-<div class="card">
-<h3>Charles Leclerc</h3>
-<p>Ferrari’s star driver known for exceptional qualifying speed.</p>
-</div>
-
-</div>
-</section>
-
-<section id="contact">
-<h2 style="font-size:40px; color:#e10600;">Contact</h2>
-<p>Email: info@f1world.com</p>
-<p>Follow us for the latest race updates and standings.</p>
-</section>
-
-<footer>
-<p>© 2026 Formula 1 World | Educational Project</p>
-</footer>
 
 </body>
 </html>
