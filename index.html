@@ -1,28 +1,174 @@
 <!DOCTYPE html>
-<html>
-<body style="text-align:center; margin-top:100px; font-family:Arial;">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formula 1 World</title>
 
-<h3>Solve the question</h3>
-
-<p>
-Three bells toll at intervals of 9, 12, 15 minutes respectively.
-If they start tolling together, after what time will they next toll together?
-</p>
-
-<input id="answer">
-<button onclick="checkAnswer()">Submit</button>
-
-<script>
-function checkAnswer(){
-    var ans = document.getElementById("answer").value;
-
-    if(ans == 180){
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    }else{
-        window.location.href = "https://youtu.be/3x3610-nQZI?si=KfGVg7FyYprTsAZc";
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
 }
-</script>
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    background:#e10600;
+    padding:15px;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* SECTIONS */
+section{
+    padding:100px 20px;
+    text-align:center;
+}
+
+#home{
+    background:url('https://images.unsplash.com/photo-1603297631955-3e6d2e7f6c2c') center/cover no-repeat;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#home h1{
+    font-size:50px;
+    color:#e10600;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:30px;
+}
+
+.card{
+    background:#222;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+}
+
+.card h3{
+    color:#e10600;
+}
+
+footer{
+    background:#e10600;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About F1</a></li>
+<li><a href="#teams">Teams</a></li>
+<li><a href="#drivers">Drivers</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="home">
+<h1>FORMULA 1</h1>
+<p>The pinnacle of motorsport</p>
+</section>
+
+<section id="about">
+<h2>About Formula 1</h2>
+<p>
+Formula 1 is the highest class of international single-seater auto racing.
+It features the fastest regulated road-course racing cars in the world.
+The championship consists of multiple races known as Grands Prix.
+</p>
+</section>
+
+<section id="teams">
+<h2>Top Teams</h2>
+<div class="card-container">
+
+<div class="card">
+<h3>Red Bull Racing</h3>
+<p>Dominant in recent seasons with incredible aerodynamic performance.</p>
+</div>
+
+<div class="card">
+<h3>Mercedes</h3>
+<p>Eight-time constructors’ champions with advanced hybrid technology.</p>
+</div>
+
+<div class="card">
+<h3>Ferrari</h3>
+<p>The most historic and iconic team in Formula 1 history.</p>
+</div>
+
+</div>
+</section>
+
+<section id="drivers">
+<h2>Top Drivers</h2>
+<div class="card-container">
+
+<div class="card">
+<h3>Max Verstappen</h3>
+<p>Multiple-time World Champion known for aggressive racing style.</p>
+</div>
+
+<div class="card">
+<h3>Lewis Hamilton</h3>
+<p>Seven-time World Champion with record-breaking achievements.</p>
+</div>
+
+<div class="card">
+<h3>Charles Leclerc</h3>
+<p>Ferrari star known for exceptional qualifying pace.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: info@f1world.com</p>
+<p>Follow us for latest updates and race results.</p>
+</section>
+
+<footer>
+<p>© 2026 Formula 1 World | Created for Educational Purpose</p>
+</footer>
 
 </body>
 </html>
